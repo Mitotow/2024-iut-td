@@ -1,6 +1,11 @@
 package iut.nantes
 
-data class Movie(val name: String, val releaseDate: Int, val rating: Int, val languages: List<String>)
+data class Movie(
+    val name: String,
+    val releaseDate: Int,
+    val rating: Int,
+    val languages: List<String>
+)
 
 val MOVIES = listOf(
     Movie("The Dark Knight", 2008, 9, listOf("VO")),

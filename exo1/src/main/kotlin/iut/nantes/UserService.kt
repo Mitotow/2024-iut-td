@@ -1,7 +1,9 @@
 package iut.nantes
 
+import org.springframework.stereotype.Service
 import java.util.*
 
+@Service
 class UserService(val database: Database) {
 
     fun save(user: User) {
@@ -13,7 +15,7 @@ class UserService(val database: Database) {
     }
 
     fun update(user: User) {
-        TODO()
+        database.update(user)
     }
 
     fun findOne(id: UUID): User? {
@@ -21,6 +23,6 @@ class UserService(val database: Database) {
     }
 
     fun findAll(name: String?): List<User> {
-        TODO()
+        return database.findAll(name)
     }
 }

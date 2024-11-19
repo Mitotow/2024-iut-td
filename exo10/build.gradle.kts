@@ -28,6 +28,8 @@ dependencies {
     testImplementation("io.mockk:mockk:1.13.12")
     testImplementation("com.ninja-squad:springmockk:4.0.2")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+	testImplementation("org.springframework:spring-test")
+	implementation("com.google.code.gson:gson:2.11.0")
 }
 
 kotlin {
