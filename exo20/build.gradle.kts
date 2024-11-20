@@ -6,7 +6,7 @@ plugins {
 	kotlin("plugin.jpa") version "1.9.25"
 }
 
-group = "iut.nantes"
+group = "iut.nantes.exo20"
 version = "0.0.1-SNAPSHOT"
 
 java {
